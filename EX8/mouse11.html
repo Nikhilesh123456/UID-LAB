@@ -1,0 +1,109 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+            <style>
+                img
+                {
+                    height: 200px;
+                }
+                body 
+                {
+                    background-image:url("logo3.jpg");
+					background-repeat:no-repeat;
+                    background-size:cover;
+                }
+                .page{
+				  background-color:blue;
+				}
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function ambani()
+            {
+                if(i==0)
+                {
+                    document.getElementById("1").src = "100496736-steve-jobs-march-2011-getty.jpg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("1").src = "ambani.jpg";
+                    i=0;
+                }
+            }
+            function alien()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("2").src = "ambani2.jpg";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("2").src = "download.jpg";
+                    j=0;
+                }
+            }
+                function partner()
+                {
+                    if(h==0)
+                    {
+                    document.getElementById("4").src="download1.jpg";
+                    h=1;
+                    }
+                    else
+                    {
+                        document.getElementById("4").src="download2.jpg";
+                        h=0;
+                    }
+                }
+                function adani()
+                {
+                    if(s==0)
+                    {
+                    document.getElementById("3").src="images1.jpg";
+                    s=1;
+                    }
+                    else
+                    {
+                        document.getElementById("3").src="images2.jpg";
+                        s=0;
+                    }
+                }
+        </script>
+        </head>
+    <body>
+	   
+        <center><h1 style="color:blue;">My Role Model</h1>
+       <div class="page"><a href="mouse21.html" style="text-decoration:none; color:white;">Mouse Regular Expression</a></div><br><br>	
+        <table style="width: 1000px; padding-left:170px; color:white;">
+        <tr>
+            <td><h3 style="color:blue">Left Click</h3></td>
+            <td><h3 style="color:blue">Hover</h3></td>
+        </tr>
+        <tr>
+        <td><img src="ambani.jpg"  onclick="ambani()" id="1"></td>
+        <td><img src="ambani2.jpg" onmouseenter="alien()" onmouseleave="alien()" id="2"></td>
+        </tr>
+		<tr>
+		<td><br><br></td>
+		</tr>
+        <tr>
+            <td><h3 style="color:blue">Double Click</h3></td>
+            <td><h3 style="color:blue">Right Click</h3></td>
+        </tr>
+        <tr>
+        <td><img src="images1.jpg" height="300px"  ondblclick="adani()" id="3"></td>
+        <td><img src="download.jpg" height="300px" oncontextmenu="partner()" id="4"></td>
+        </tr>
+        <tr></tr>
+    </table></center>
+    
+      </div>
+      </body>
+</html>

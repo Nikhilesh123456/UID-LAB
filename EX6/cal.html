@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+  
+    <link rel="stylesheet" href="cal.css">
+    <script type="text/javascript" src="cal.js"></script>
+
+    <style>
+        body 
+        {
+            background-image:url("logo3.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+    </style>
+</head>
+
+
+<body >
+<div class="font1">
+    <h1 align="center" style="color: red"> Land Measurement Calculator</h1>
+    <table class="calculator">
+        <tr>
+            <td style="width:11px" colspan="3"> <input class="display-box" type="text" placeholder="Enter the value" id="invalue" disabled /> </td>
+
+            <!-- clearScreen() function clears all the values -->
+            
+            
+        </tr>
+        <tr>
+            <!-- display() function displays the value of clicked button -->
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+            
+        </tr>   
+        <tr colspan="2"><td style="color: #ff0000;"></td></tr>
+        <tr >
+            <td> <input type="button" value="Hectare to acre" onclick="calculate1()" /> </td>
+            <td> <input type="button" value="acres to sq m" onclick="calculate2()" /> </td>
+            <td> <input type="button" value="centi to inch " onclick="calculate3()" /> </td>
+        </tr>
+        <tr >
+            <td> <input type="button" value="acre to hectare" onclick="calculate4()" /> </td>
+            <td> <input type="button" value="sq m to acres" onclick="calculate5()" /> </td>
+            <td> <input type="button" value="inch to centi" onclick="calculate6()" /> </td>
+        </tr>
+    </table>
+    <br>
+    <center>
+     
+    <div class="calc1">
+    <input class="display-box" type="text" placeholder="Result " id="result" disabled />
+    </center>
+</div>
+</div>
+</body>
+
+</html>
